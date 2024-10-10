@@ -5,12 +5,15 @@ html {
   margin: 0 auto;
   letter-spacing: 2px;
   font-size: 16px;
+  font-size: 2vw;
 
   text-align: left;
   font-family: verdana, sans-serif;
   font-family: YuGothic, '游ゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, sans-serif;
   
   line-height: 180%;
+  background-color: #ddd;
+
 }
  
 /*固定する背景*/
@@ -36,21 +39,9 @@ div {
 }
  
 /*スクロールするコンテンツ*/
-.scrollbox1 {
-  background-color: #fff;
-  height: 40%;
+.scrollbox {
+  /* background-color: #ddd; */
 }
-
-.scrollbox2 {
-    background-color: #ffa;
-    height: 30%;
-}
-
-.scrollbox3 {
-    background-color: #fff;
-    height: 20%;
-}
-
 
 p {
 	margin: 0px 0px 10px 0px;
@@ -82,12 +73,12 @@ h2 {
 }
 
 ul {
-    margin:		0px 0px 2.0rem 2.0rem;
+    margin:		2rem 0px 2.0rem 2.0rem;
     padding:	0px 0px 0px 0.5rem;
     
     list-style-type: circle;
     list-style-type: "\1F4BB";
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 li {
