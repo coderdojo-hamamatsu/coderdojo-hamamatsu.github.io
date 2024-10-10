@@ -1,77 +1,109 @@
-#outline {
-    position: relative;
-    height: 800px;
-    width: 800px;
-    margin: 18px auto 0;
-    border: solid 1px #999;
+/*画面全体の設定*/
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 16px;
+
+  text-align: left;
+  font-family: verdana, sans-serif;
+  font-family: YuGothic, '游ゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, sans-serif;
+  
+  line-height: 180%;
+}
+ 
+/*固定する背景*/
+div {
+  box-sizing: border-box;
+  color: #333;
+  /* font-size: 5rem; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 100%;
+  padding: 5%;
 }
 
-#caption {
-    width: 260px;
-    left: 48px;
-    top: 318px;
-    position: absolute;
-    visibility: visible;
+.parallax-bg {
+  background-image: url('../img/bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* opacity:0.5;
+  background: rgba(0,0,0, 0.4); */
+}
+ 
+/*スクロールするコンテンツ*/
+.scrollbox1 {
+  background-color: #fff;
+  height: 40%;
 }
 
-#text {
-    left: 336px;
-    top: 318px;
-    position: absolute;
-    width: 400px;
-    visibility: visible;
-    margin-top: 10px;
+.scrollbox2 {
+    background-color: #ffa;
+    height: 30%;
 }
 
-#title {
-    width: 800px;
-    top: 100px;
-    position: absolute;
-    visibility: visible;
+.scrollbox3 {
+    background-color: #fff;
+    height: 20%;
 }
+
 
 p {
-    color: #666;
-    font-size: 16px;
-    font-family: "Lucida Grande", Arial, sans-serif;
-    font-weight: normal;
-    margin-top: 0;
+	margin: 0px 0px 10px 0px;
+
+    /*text-indent: 1em;*/
+
+    /*text-align: left;*/
+    text-align: justify;
+    text-justify: inter-ideograph; /* 両端揃えの種類 */
 }
 
 h1 {
-    color: #778fbd;
-    font-size: 20px;
-    font-family: "Lucida Grande", Arial, sans-serif;
-    font-weight: 500;
-    line-height: 32px;
-    margin-top: 4px;
+	margin: 30% auto 10px auto;
+	padding: 0px;
+
+    color: #fff;
+    font-size: 5rem;
+    text-align: center;
+
+    text-shadow: #000 1px 0 20px;
 }
 
 h2 {
-    color: #778fbd;
-    font-size: 18px;
-    font-family: "Lucida Grande", Arial, sans-serif;
-    font-weight: normal;
-    margin: 0.83em 0 0;
+	margin: 0px 0px 20px 0px;
+	padding-top: 20px;
+
+    font-size: 1.5rem;
+	font-weight: bold;
 }
 
-h3 {
-    color: #666;
-    font-size: 60px;
-    font-family: "Lucida Grande", Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: -1px;
-    width: auto;
+ul {
+    margin:		0px 0px 2.0rem 2.0rem;
+    padding:	0px 0px 0px 0.5rem;
+    
+    list-style-type: circle;
+    list-style-type: "\1F4BB";
+    font-size: 3rem;
 }
 
-h4 {
-    font-weight: bold;
-    text-align: center;
-    margin: 1.33em 0;
+li {
+	margin:		0px 0px 1rem 0px;
+	padding:	0px 0px 0px 1rem;
+	line-height: 140%;
 }
 
 a {
-    color: #666;
-    text-decoration: underline;
+    color: #333;
+    text-decoration: none;
 }
+
+a {	text-decoration: none; }
+a:link { color: #00f; }
+a:visited { color: #00c; }
+a:active { color: #f00; }
+a:hover { color: #f00; }
+
