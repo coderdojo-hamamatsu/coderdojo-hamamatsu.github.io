@@ -1,40 +1,165 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-
-	<head>
-	<meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoderDojo 浜松</title>
 
-    <link rel="stylesheet" href="css/main.css">    
-	</head>
-	<body>
-		<div class="parallax-bg">
-			<h1>CoderDojo 浜松</h1>
-		</div>
-		<div class="scrollbox">
-			<h2>CoderDojo 浜松では、2016年から月に1回ペースで道場を開いています。</h2>
-			<p>
-				CoderDojoは7〜17歳の子どもを対象にしたプログラミング道場です。
-				毎週、全世界の各地で道場が開かれています。
-			</p>
-			<p>
-				CoderDojoは一般的なプログラミング教室とは違って、先生が教えたり、教科書を使って勉強したりすることはありません。
-				そのかわりに必要なときに大人が相談に乗ったり、子ども同士で学び合うことを推奨しています。
-			</p>
-			<p>CoderDojo 浜松では主にScratchやProcessingなどを使ったプログラミング、micro:bitなどのマイコンボードのプログラミングなどを行なっています。
-				もちろんプログラムに関係あることなら自分の興味がある事をしていただいてかまいません。
-			</p>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-			<ul>
-				<li><a href="https://coderdojo-hamamatsu.connpass.com/">詳細・参加の申し込み</a></li>
-				<li><a href="https://coderdojo-hamamatsu.ruirui.jp/">旧ブログアーカイブ（更新停止）</a></li>
-			</ul>
+    <!-- CSS Reset -->
+    <style>
+        /* リセット */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-			<div>
-			<p>当Webサイト上の個々の作品だけが著作物ではなく、Webサイトの構成などが思想・感情の表現であるならば、編集著作物として著作権法で保護されます。</p>
-			<p>Copyright © CoderDojo 浜松 2016-2024. All Rights Reserved.</p>
-			</div>
-	</body>
+        /* 全体のスタイル */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f4f4f9;
+            padding: 40px; /* 全体に余白を追加 */
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s ease; /* ホバー時のスムーズな変化 */
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* ヘッダー */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 20px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc); /* グラデーション背景 */
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* メインコンテンツ */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #444;
+            border-left: 5px solid #007BFF;
+            padding-left: 10px;
+        }
+
+        section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        	list-style-type: circle;
+		    list-style-type: "\1F4BB";
+        }
+
+        li {
+			margin:		0px 0px 1rem 0px;
+			padding:	0px 0px 0px 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        /* パララックス背景 */
+        .parallax-bg {
+            background-image: url('./img/bg.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 60px 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .parallax-bg h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="parallax-bg">
+        <h1>CoderDojo 浜松</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>CoderDojo 浜松では、2016年から月に1回ペースで道場を開いています。</h2>
+            <p>
+                CoderDojoは7〜17歳の子どもを対象にしたプログラミング道場です。
+                毎週、全世界の各地で道場が開かれています。
+            </p>
+            <p>
+                CoderDojoは一般的なプログラミング教室とは違って、先生が教えたり、教科書を使って勉強したりすることはありません。
+                そのかわりに必要なときに大人が相談に乗ったり、子ども同士で学び合うことを推奨しています。
+            </p>
+            <p>
+                CoderDojo 浜松では主にScratchやProcessingなどを使ったプログラミング、micro:bitなどのマイコンボードのプログラミングなどを行なっています。
+                もちろんプログラムに関係あることなら自分の興味がある事をしていただいてかまいません。
+            </p>
+        </section>
+
+        <section>
+            <ul>
+                <li><a href="https://coderdojo-hamamatsu.connpass.com/">詳細・参加の申し込み</a></li>
+                <li><a href="https://coderdojo-hamamatsu.ruirui.jp/">旧ブログアーカイブ（更新停止）</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>当Webサイト上の個々の作品だけが著作物ではなく、Webサイトの構成などが思想・感情の表現であるならば、編集著作物として著作権法で保護されます。</p>
+        <p>Copyright © CoderDojo 浜松 2016-2024. All Rights Reserved.</p>
+    </footer>
+</body>
 
 </html>
