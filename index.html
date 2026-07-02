@@ -7,9 +7,8 @@
     <title>CoderDojo 浜松</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS Reset -->
     <style>
         /* リセット */
         * {
@@ -20,145 +19,297 @@
 
         /* 全体のスタイル */
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.8;
             color: #333;
-            background-color: #f4f4f9;
-            padding: 40px; /* 全体に余白を追加 */
+            background:
+                radial-gradient(circle at top left, #fff176 0, transparent 30%),
+                radial-gradient(circle at top right, #81d4fa 0, transparent 30%),
+                linear-gradient(135deg, #fffde7, #e1f5fe);
+            padding: 30px;
         }
 
-        a {
-            color: #007BFF;
-            text-decoration: none;
-            transition: color 0.3s ease; /* ホバー時のスムーズな変化 */
+        ul {
+            list-style: none;
+            margin: 20px 0;
         }
 
-        a:hover {
-            color: #0056b3;
-            text-decoration: underline;
+        li {
+            position: relative;
+            margin-bottom: 14px;
+            padding: 14px 18px 14px 48px;
+            background: #ffffff;
+            border-radius: 18px;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 0 #c5e1a5;
         }
+
+        li::before {
+            content: "💡";
+            position: absolute;
+            left: 16px;
+        }
+
 
         /* ヘッダー */
         header {
             text-align: center;
-            margin-bottom: 50px;
-            padding: 20px;
-            background: linear-gradient(135deg, #6a11cb, #2575fc); /* グラデーション背景 */
+            margin-bottom: 40px;
+            padding: 70px 20px;
+            background:
+                linear-gradient(rgba(255,255,255,.25), rgba(255,255,255,.25)),
+                url('./img/bg.jpg') center/cover;
+            border-radius: 35px;
             color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 0 #ffb300;
         }
 
         header h1 {
-            font-size: 3rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            font-size: 4rem;
+            padding: 20px 40px;
+            background: #ff7043;
+            border-radius: 999px;
+            color: white;
+            text-shadow: 3px 3px 0 #d84315;
+            transform: rotate(-2deg);
+        }
+
+        .catch {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 8px 22px;
+            font-size: 2.0rem;
+            font-weight: bold;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 999px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
 
         /* メインコンテンツ */
         main {
-            max-width: 900px;
+            max-width: 950px;
             margin: 0 auto;
             padding: 30px;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            border-radius: 35px;
+            border: 6px solid #ffd54f;
+            box-shadow: 0 12px 0 #ffca28;
         }
 
         section {
             margin-bottom: 30px;
+            padding: 30px;
+            background: #f1f8e9;
+            border-radius: 28px;
+            border: 4px dashed #8bc34a;
         }
 
         section h2 {
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #444;
-            border-left: 5px solid #007BFF;
-            padding-left: 10px;
+            font-size: 2.0rem;
+            color: #2e7d32;
+            border-left: none;
+            padding-left: 0;
+        }
+
+        section h2::before {
+            content: "🌟 ";
         }
 
         section p {
+            font-size: 1.5rem;
             margin-bottom: 15px;
-            text-align: justify;
         }
 
-        ul {
-            margin: 20px 0;
-            padding-left: 20px;
-        	list-style-type: circle;
-		    list-style-type: "\1F4BB";
+        section.centering {
+            text-align: center;
         }
 
-        li {
-			margin:		0px 0px 1rem 0px;
-			padding:	0px 0px 0px 1rem;
-            font-size: 1.2rem;
+        .btn {
+            display: inline-block;
+            padding: 18px 36px;
+            margin: 15px;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #ff7043, #ffca28);
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            transition: .2s;
+            box-shadow: 0 7px 0 #e65100;
+        }
+
+        .btn:hover {
+            transform: translateY(4px);
+            box-shadow: 0 3px 0 #e65100;
+            color: white;
+        }
+
+        .btn:before {
+            content: "🚀 ";
         }
 
         /* フッター */
         footer {
+            max-width: 950px;
+            margin: 50px auto 0;
+            padding: 25px;
             text-align: center;
-            margin-top: 50px;
-            font-size: 0.9rem;
+            background: #fff3e0;
+            border-radius: 25px;
             color: #666;
+            font-size: 1.2rem;
         }
 
         footer p {
             margin-bottom: 5px;
         }
 
-        /* パララックス背景 */
-        .parallax-bg {
-            background-image: url('./img/bg.jpg');
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            padding: 60px 20px;
-            color: #fff;
-            text-align: center;
+        /* リンク集 */
+        .link-list {
+            list-style: none;
+            margin-top: 20px;
         }
 
-        .parallax-bg h1 {
-            font-size: 4rem;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+        .link-list li {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 18px;
+            padding: 18px 22px;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 0 #90caf9;
         }
+
+        .link-list li::before{
+            content:none;
+        }
+
+        .link-list a::before {
+            content: "🔗 ";
+        }
+
+        .link-list a {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #1976d2;
+            text-decoration: none;
+        }
+
+        .link-list a:hover {
+            text-decoration: underline;
+        }
+
+        .link-list span {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
     </style>
 </head>
 
 <body>
-    <header class="parallax-bg">
-        <h1>CoderDojo 浜松</h1>
+    <header>
+        <h1>CoderDojo&nbsp;浜松</h1>
+        <p class="catch">つくって、ためして、たのしく学ぼう！</p>
     </header>
 
     <main>
         <section>
-            <h2>CoderDojo 浜松では、2016年から月に1回ペースで道場を開いています。</h2>
+            <h2>こどもたちのためのプログラミング道場</h2>
             <p>
-                CoderDojoは7〜17歳の子どもを対象にしたプログラミング道場です。
+                CoderDojoは7〜17歳のこどもを対象にしたプログラミング道場です。
                 毎週、全世界の各地で道場が開かれています。
             </p>
+
             <p>
-                CoderDojoは一般的なプログラミング教室とは違って、先生が教えたり、教科書を使って勉強したりすることはありません。
-                そのかわりに必要なときに大人が相談に乗ったり、子ども同士で学び合うことを推奨しています。
+                一般的なプログラミング教室とは違って、先生が教えたり、教科書を使って勉強したりすることはありません。
+                そのかわりに、こども同士で学び合ったり、必要なときに大人が相談にのったりします。
             </p>
-            <p>
-                CoderDojo 浜松では主にScratchやProcessingなどを使ったプログラミング、micro:bitなどのマイコンボードのプログラミングなどを行なっています。
-                もちろんプログラムに関係あることなら自分の興味がある事をしていただいてかまいません。
-            </p>
+
+            <ul>
+                <li>非営利のプログラミングクラブ</li>
+                <li>自律的なコミュニティグループ</li>
+                <li>自自主性を持って学ぶ若い世代を支援</li>
+            </ul>
         </section>
 
         <section>
+            <h2>CoderDojo&nbsp;浜松では…</h2>
+            <p>
+                CoderDojo&nbsp;浜松では、2016年から月に1回ペースで道場を開いています。
+                CoderDojoは地域ごとに活動内容が異なりますが、CoderDojo&nbsp;浜松では次のようなことをやっています。
+            </p>
             <ul>
-                <li><a href="https://coderdojo-hamamatsu.connpass.com/">詳細・参加の申し込み</a></li>
-                <li><a href="https://coderdojo-hamamatsu.ruirui.jp/">旧ブログアーカイブ（更新停止）</a></li>
+                <li>Scratch（ブロック・プログラミング環境）による製作・学習</li>
+                <li>micro:bit、Raspberry Pi などのマイコンボードのプログラミング</li>
+                <li>Processing / Python / JavaScript / Unity などを使ったプログラミング</li>
+                <li>Tinkercadなどを使った3Dモデリング</li>
+            </ul>
+
+            <p>
+                これら以外でも、プログラミングやコンピューター、ICTに関係あることなら、自分の興味がある事を自由にすることができます。
+            </p>
+
+            <p>
+                初めて参加される方や「プログラムをはじめたいけど、何からやればよいの？」という方には、会場にある書籍や初心者向けサイトを紹介して、最初の一歩の手助けをしています。
+            </p>
+
+        </section>
+
+
+
+        <section class="centering">
+            <a href="https://coderdojo-hamamatsu.connpass.com/" class="btn">参加申し込み<br>（外部サイトが開きます）</a>
+            <a href="https://scratch.mit.edu/studios/32504726/" class="btn">CoderDojo&nbsp;浜松 Scratchスタジオ<br>（外部サイトが開きます）</a>
+            <!-- <a href="https://coderdojo-hamamatsu.ruirui.jp/" class="btn">ブログアーカイブ<br>（外部サイトが開きます）</a> -->
+        </section>
+
+
+        <section>
+            <h2>🔗 リンク集</h2>
+
+            <ul class="link-list">
+                <li>
+                    <a href="https://coderdojo.jp/" target="_blank">CoderDojo Japan</a>
+                    <span>日本全国のCoderDojoを紹介しています。</span>
+                </li>
+
+                <li>
+                    <a href="https://coderdojo.com/" target="_blank">CoderDojo Foundation</a>
+                    <span>CoderDojoの公式サイト（英語）です。</span>
+                </li>
+
+                <li>
+                    <a href="https://scratch.mit.edu/" target="_blank">Scratch</a>
+                    <span>MITが開発した子ども向けプログラミング環境です。</span>
+                </li>
+
+                <li>
+                    <a href="https://microbit.org/ja/" target="_blank">micro:bit</a>
+                    <span>micro:bit公式サイトです。</span>
+                </li>
+
+                <li>
+                    <a href="https://www.raspberrypi.com/" target="_blank">Raspberry Pi</a>
+                    <span>Raspberry Pi公式サイトです。</span>
+                </li>
+
+                <li>
+                    <a href="https://www.tinkercad.com" target="_blank">Tinkercad</a>
+                    <span>Autodesk社が提供する無料のの3Dモデリングツールです。</span>
+                </li>
             </ul>
         </section>
+
     </main>
 
     <footer>
         <p>当Webサイト上の個々の作品だけが著作物ではなく、Webサイトの構成などが思想・感情の表現であるならば、編集著作物として著作権法で保護されます。</p>
-        <p>Copyright © CoderDojo 浜松 2016-2024. All Rights Reserved.</p>
+        <p>Copyright © CoderDojo&nbsp;浜松 2016-2026. All Rights Reserved.</p>
     </footer>
 </body>
 
